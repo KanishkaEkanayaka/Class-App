@@ -1,0 +1,6 @@
+{
+    "name":"ClassMate-Production",
+    "database":{
+        "location":"classmate_db_location"
+    }
+}

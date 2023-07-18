@@ -1,0 +1,6 @@
+{
+    "name":"ClassMate-Test",
+    "database":{
+        "location":"classmate_db_location"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "name":"ClassMate-Development",
+    "database":{
+        "location":"classmate_db_location"
+    }
+}

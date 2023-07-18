@@ -1,0 +1,19 @@
+{
+    "name":"ClassMate-Default",
+    "database":{
+        "location":"classmate_db_location"
+    },
+    "jwt":{
+        "privateKey":""
+    },
+    "winston":{
+        "timezone":"",
+        "log-level":"",
+        "database-location":""
+    },
+    "cloudinary":{
+        "cloud-name":"classmate_cloud_name",
+        "api-key":"classmate_api_key",
+        "api-secret":"classmate_api_secret"
+    }
+}
