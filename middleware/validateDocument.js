@@ -14,7 +14,7 @@ module.exports = function(req, res, next){
     // Check if the image size is less than 2 MB (2 * 1024 * 1024 bytes)
     const maxSize = 10 * 1024 * 1024;
     if (pdfdoc.size > maxSize) {
-      return res.status(400).send('PDF size exceeds the allowed limit (2 MB).');
+      return res.status(400).send('PDF size exceeds the allowed limit (10 MB).');
     }
 
     next();

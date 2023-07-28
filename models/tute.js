@@ -38,7 +38,7 @@ function validateTute(tute){
     const schema = Joi.object({
         name:Joi.string().min(5).max(30).required(),
         fileId:JoiOid().required(),
-        grade:Joi.string().valid(...grades).required(),
+        grade:Joi.string().valid(...grades).lowercase().required(),
         month: Joi.date().required()
     });
 

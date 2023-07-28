@@ -44,7 +44,7 @@ const userSchema = new mongoose.Schema({
     },
     profilePic:{
         type:String,
-        maxlength:300
+        maxlength:500
     },
     address:{
         type:String,
@@ -84,7 +84,7 @@ function validateUser(user){
         'password'),
         grade: Joi.string().valid(...grades).required(),
         role: Joi.string().valid(...roles).required(),
-        profilePic:Joi.string().max(300),
+        profilePic:Joi.string().max(500),
         address:Joi.string().min(5).max(255),
         phone:Joi.number().min(10).max(10),
         guardianId: JoiOid()
@@ -118,3 +118,4 @@ function validateUserAuth(user){
 exports.validateUser = validateUser;
 exports.validateUserAuth = validateUserAuth;
 exports.User = User;
+exports.userSchema = userSchema;
